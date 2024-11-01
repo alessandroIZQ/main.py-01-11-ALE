@@ -1,0 +1,25 @@
+race_dict = {
+    "TROMPO": "La acción de realizar un giro sin control.",
+    "PARC FERME": "Lugar donde se estacionan los autos tras la carrera.",
+    "POLE POSITION": "La hazaña de empezar en primera posición para la carrera.",
+    "HAT TRICK": "La hazaña de conseguir la pole position, la vuelta rápida y la victoria en una carrera.",
+    "GRAND CHELEM": "La hazaña de conseguir la pole position, la vuelta rápida, liderar todas las vueltas, y ganar en una carrera. En otras palabras, la carrera perfecta.",
+    "SBINNALA": "Expresión italiana que indica la realización de un trompo que perjudique tus oportunidades de conseguir un resultado positivo.",
+    "TIFOSI": "Fanáticos de Ferrari.",
+    "LIVERY": "Pintura que se usa en los autos para hacerlos fáciles de identificar y darles una identidad.",
+    "PAPAYA ARMY": "Fanáticos de McLaren.",
+    "FIA": "Organización reguladora de origen francés (Féderation Internationale d'Automobile), encargada de administrar sanciones, implementar políticas y hospedar carreras en deportes como la Formula 1, el campeonato mundial de resistencia, etc.",
+    "MA-FIA": "Chiste que utilizan los fanáticos para simbolizar ciertas decisiones cuestionables hechas por la FIA para favorecer a algún piloto."
+}
+
+print("¡Hola! Bienvenido al mini-diccionario de terminología de la Formula 1. Aquí, podrás consultarnos sobre ciertos términos que desconoces, y nosotros te presentaremos la definición.")
+print(" ") # Esto sirve como un separador.
+
+for i in range(5):
+    word = input("Escribe un término que no entiendas (usar mayúsculas):")
+    if word in race_dict.keys():
+        print(race_dict[word])
+        print(" ")
+    else:
+        print("Lamentablemente, no tenemos alguna o algunas de esas palabras en nuestro registro. Intente de nuevo.")
+        print(" ")
